@@ -6,22 +6,50 @@ const defaultData = {
   "8xf0y6ziyjabvozdd253nd": {
     id: '8xf0y6ziyjabvozdd253nd',
     timestamp: 1467166872634,
-    title: 'Udacity is the best place to learn React',
-    body: 'Everyone says so after all.',
-    author: 'thingtwo',
-    category: 'python',
-    voteScore: 6,
+    title: 'Is this seriously all there is to redux-thunk?',
+    body: `function createThunkMiddleware(extraArgument) {
+  return ({ dispatch, getState }) => next => action => {
+    if (typeof action === 'function') {
+      return action(dispatch, getState, extraArgument);
+    }
+
+    return next(action);
+  };
+}
+
+const thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+export default thunk;`,
+    author: 'Elizabeth',
+    category: 'javascript',
+    voteScore: 23,
     deleted: false,
     commentCount: 2
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: '6ni6ok3ym7mf1p33lnez',
     timestamp: 1468479767190,
-    title: 'Learn Redux in 10 minutes!',
-    body: 'Just kidding. It takes more than 10 minutes to learn technology.',
-    author: 'thingone',
-    category: 'ruby',
-    voteScore: -5,
+    title: 'Hello World',
+    body: `public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+}`,
+    author: 'Anonymous',
+    category: 'java',
+    voteScore: 17,
+    deleted: false,
+    commentCount: 0
+  },
+  "9ni6o73ym7m71p33lnez": {
+    id: '9ni6o73ym7m71p33lnez',
+    timestamp: 1468479767790,
+    title: 'Reverse and print lines in file using Perl in the commandline',
+    body: `perl -e 'print reverse <>' foo.txt`,
+    author: 'Josh',
+    category: 'perl',
+    voteScore: 12,
     deleted: false,
     commentCount: 0
   }
